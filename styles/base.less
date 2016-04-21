@@ -62,6 +62,16 @@ atom-text-editor .search-results .marker.current-result .region,
   border: 1px solid @syntax-result-marker-color-selected;
 }
 
+.source {
+  &.js {
+    color: @blue;
+  }
+}
+
+.propery-name {
+  color: @cyan;
+}
+
 .comment {
   color: @light-gray;
 }
@@ -74,7 +84,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.operator {
-    color: @syntax-text-color;
+    color: @yellow;
   }
 
   &.other.special-method {
@@ -82,23 +92,23 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.other.unit {
-    color: @css-operator;
+    color: @orange;
   }
 }
 
 .storage {
-  color: @js-keyword;
+  color: @purple;
 }
 
 .constant {
-  color: @css-atom;
+  color: @blue;
 
   &.character.escape {
     color: @cyan;
   }
 
   &.numeric {
-    color: @css-atom;
+    color: @orange;
   }
 
   &.other.color {
@@ -108,17 +118,24 @@ atom-text-editor .search-results .marker.current-result .region,
   &.other.symbol {
     color: @green;
   }
+
+  &.boolean {
+    color: @lime;
+  }
 }
 
 .variable {
-  color: @red;
+  color: @white;
+  &.property {
+    color: @yellow;
+  }
 
   &.interpolation {
     color: darken(@red, 10%);
   }
 
   &.parameter.function {
-    color: @syntax-text-color;
+    color: @blue;
   }
 }
 
@@ -128,7 +145,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .string {
-  color: @xml-string;
+  color: @orange;
 
 
   &.regexp {
@@ -144,42 +161,20 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 }
 
-.meta {
-  &.tag {
-    &.html {
-      color: @xml-comment;
-    }
-    &.line {
-      color: @xml-tag;
-    }
-    &.scss {
-      color: @css-tag;
-    }
-    &.css {
-      color: @css-tag;
-    }
-  }
-  .property-name {
-    &.scss {
-      color: @css-property;
-    }
-    &.css {
-      color: @css-property;
-    }
-  }
-}
-
 .punctuation {
   &.definition {
     &.comment {
-      color: @xml-comment;
+      color: @light-gray;
     }
 
     &.string,
     &.variable,
-    &.parameters,
     &.array {
-      color: @xml-tag;
+      color: @orange;
+    }
+
+    &.parameters {
+      color: @white;
     }
 
     &.heading,
@@ -196,6 +191,14 @@ atom-text-editor .search-results .marker.current-result .region,
       color: @purple;
       font-style: italic;
     }
+
+    &.bracket {
+      color: @white;
+    }
+  }
+
+  &.terminator {
+    color: @white;
   }
 
   &.section.embedded {
@@ -205,12 +208,8 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .support {
-  &.class {
-    color: @light-orange;
-  }
-
   &.function  {
-    color: @cyan;
+    color: @white;
 
     &.any-method {
       color: @blue;
@@ -220,7 +219,7 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .entity {
   &.name.function {
-    color: @blue;
+    color: @yellow;
   }
   &.name.type {
     color: @light-orange;
@@ -228,7 +227,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.other.inherited-class {
-    color: @xml-string;
+    color: @green;
   }
   &.name.class, &.name.type.class {
     color: @light-orange;
@@ -239,24 +238,14 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.name.tag {
-    color: @xml-tag;
-    &.scss {
-      color: @css-tag;
-    }
-    &.css {
-      color: @css-tag;
-    }
+    color: @orange;
   }
 
   &.other.attribute-name {
-    color: @xml-attribute;
+    color: @orange;
 
     &.id {
-      color: @xml-attribute;
-    }
-
-    &.css {
-      color: @css-tag
+      color: @blue;
     }
   }
 }
@@ -267,7 +256,7 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.link {
-    color: @xml-link;
+    color: @orange;
   }
 
   &.require {
@@ -281,6 +270,30 @@ atom-text-editor .search-results .marker.current-result .region,
   &.separator {
     background-color: @gray;
     color: @syntax-text-color;
+  }
+
+  &.brace {
+    color: @white;
+  }
+
+  .delimiter {
+    color: @white;
+  }
+
+  &.function {
+    .entity {
+      &.name.function {
+        color: @blue;
+      }
+    }
+  }
+
+  &.function-call {
+    .entity {
+      &.name.function {
+        color: @white;
+      }
+    }
   }
 }
 
