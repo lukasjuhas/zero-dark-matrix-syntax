@@ -1,7 +1,7 @@
 {
   "name": "zero-dark-matrix-syntax",
   "theme": "syntax",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A 'Zero Dark Matrix' theme for Atom used in Google Chrome's developer tools.",
   "keywords": [
     "syntax",
