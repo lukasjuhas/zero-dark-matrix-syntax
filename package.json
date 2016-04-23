@@ -4,6 +4,11 @@
   "version": "0.0.1",
   "description": "A 'Zero Dark Matrix' theme for Atom used in Google Chrome's developer tools.",
   "keywords": [
+    "zero",
+    "dark",
+    "matrix",
+    "chrome",
+    "dev-tools",
     "syntax",
     "theme"
   ],
