@@ -1,4 +1,6 @@
 # Zero Dark Matrix Syntax
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/lukasjuhas/zero-dark-matrix-syntax.svg)](https://greenkeeper.io/)
 A 'Zero Dark Matrix' theme for Atom used in Google Chrome's developer tools.
 
 Currently in development, a bit clunky.
